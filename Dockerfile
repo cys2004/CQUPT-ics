@@ -2,6 +2,7 @@ FROM python:3.10.6-slim
 
 EXPOSE 80
 WORKDIR /app
+ENV DEFAULT_PROVIDERS redrock
 
 COPY ./requirements.txt /tmp/requirements.txt
 COPY ./requirements_server.txt /tmp/requirements_server.txt
